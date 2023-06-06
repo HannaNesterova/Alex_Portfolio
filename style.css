@@ -313,6 +313,7 @@ max-height: 300px;
 background-color: #ffffff;
 padding: 53px 57px;
 border-radius: 5px;
+flex-shrink: 2;
 }
 
 .column-pretitle{
@@ -377,6 +378,7 @@ text-align: center;
     max-width: 360px;
     margin-top: 140px;
     align-items: center;
+    flex-shrink: 1;
 }
 .img-skrol-info h6{
   padding:15px;
@@ -398,11 +400,20 @@ PORTFOLIO8*/
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  max-width: 1150px;
 }
-.img-skrol-info{
+.work .img-skrol-info{
   border: 1px solid rgba(0, 0, 0, 0.176);
   border-radius: 10px;
   padding-bottom: 25px;
+  align-items: stretch;
+}
+.work .img-skrol-info a{
+  opacity: 0.5;
+  transition: all 3s ease 0;
+}
+.work .img-skrol-info a:hover{
+  opacity: 1;
 }
 
 /*EXPERIENCE*/
