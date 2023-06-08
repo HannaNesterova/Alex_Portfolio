@@ -40,5 +40,4 @@ for(let activeLink of activeLinks){
 
   /* add class 'active' to the correct article */
   targetArticle.classList.add('active');
-
 }
