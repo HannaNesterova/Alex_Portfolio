@@ -41,3 +41,13 @@ for(let activeLink of activeLinks){
   /* add class 'active' to the correct article */
   targetArticle.classList.add('active');
 }
+/*BURGER*/
+const body = document.querySelector('body');
+const menu = document.querySelector('.header_menu');
+const burger = document.querySelector('.header_burger');
+
+burger.addEventListener('click', ()=>{
+menu.classList.toggle('active');
+burger.classList.toggle('active');
+body.classList.toggle('lock');
+})

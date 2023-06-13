@@ -13,15 +13,16 @@
 </head>
 <body>
     <div class="wrapper">
-        <!-- <main class="page">
-            <span class="icon-Vector-3"></span>
-            <div class="title_lable">MY NAME IS</div>
-            <div class="title">Featured Portfolios </div>
-            <div class="title_value">MY NAME IS</div>
-        </main> -->
         <header class="header">
             <div class="header_container container">
-                <a href="#" class="header_logo"><img src="/img/icons/Logo.svg" alt="logo"></a>
+                <div class="header_body">
+                <a href="#" class="header_logo">
+                    <img src="/img/icons/Logo.svg" alt="logo">
+                </a>
+                <!-- add a burger_menu -->
+                <div class="header_burger">
+                    <span></span>
+                </div>
                 <div class="header_menu menu">
                     <button type="button" class="menu_icon icon-menu"><span></span></button>
                     <nav class="menu_body">
@@ -35,8 +36,7 @@
                 </div>
                 <div class="header_action">
                     <a href="#" class="header_button">Resume</a>
-                    <!-- add a burger_menu -->
-                    <!-- <button type="button" class="burger_menu"><span></span></button> -->
+                </div>
                 </div>
             </div>
         </header>
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                     <div class="main-section_img">
-                        <img src="/img/Hero Image.png" alt="person">
+                        <img class="man" src="/img/Hero Image.png" alt="person">
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
               </div>
               <div class="work_skrol-img">
                 <div class="img-skrol-info">
-                    <a href="#"><img src="/img/Portfolio item.jpeg" alt="portfolio"></a>
+                    <a href="#"><img class="img-skrol-info-img" src="/img/Portfolio item.jpeg" alt="portfolio"></a>
                     <h6>Agency Website.</h6>
                     <div class="button-img">
                         <a href="#" class="press">WordPress</a>
@@ -118,7 +118,7 @@
                 </div>
 
                 <div class="img-skrol-info">
-                    <a href="#"><img src="/img/Portfolio item1.jpeg" alt="portfolio"></a>
+                    <a href="#"><img class="img-skrol-info-img"  src="/img/Portfolio item1.jpeg" alt="portfolio"></a>
                     <h6>Agency Website.</h6>
                     <div class="button-img">
                         <a href="#" class="press">WordPress</a>
@@ -127,7 +127,7 @@
                 </div>
 
                 <div class="img-skrol-info">
-                    <a href="#"><img src="/img/Portfolio item2.jpeg" alt="portfolio"></a>
+                    <a href="#"><img class="img-skrol-info-img"  src="/img/Portfolio item2.jpeg" alt="portfolio"></a>
                     <h6>Agency Website.</h6>
                     <div class="button-img">
                         <a href="#" class="press">WordPress</a>
@@ -225,7 +225,7 @@
 
                  <div class="work_skrol-img">
                 <div class="img-skrol-info">
-                    <img src="/img/Thumbnail.png">
+                    <img class="img-skrol-info-img" src="/img/Thumbnail.png">
                     <h6>How to prototype in figma</h6>
                     <h6>July 15, 2021</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...</p>
@@ -235,7 +235,7 @@
                 </div>
 
                 <div class="img-skrol-info">
-                    <img src="/img/notiono.jpeg">
+                    <img class="img-skrol-info-img"  src="/img/notiono.jpeg">
                     <h6>Being more productive with Notion.</h6>
                     <h6>July 15, 2021</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...</p>
@@ -245,7 +245,7 @@
                 </div>
 
                 <div class="img-skrol-info">
-                    <img src="/img/ai.jpeg">
+                    <img class="img-skrol-info-img"  src="/img/ai.jpeg">
                     <h6>Beginners guide to adobe illustrator </h6>
                     <h6>July 15, 2021</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...</p>
@@ -352,20 +352,26 @@
         <section class="section_form">
             <div class="container contacts-container">
                 <div class="contacts_content">
-                <form action="#" class="contacts_form form">
-                    <div class="form_item">
-                        <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name" class="form_input">
-                    </div>
+                    <form
+                        action="https://formspree.io/f/xpzevwjo"
+                        method="POST" class="contacts_form form"
+                        >
+                        <input type="hidden" name="_language" value="en"/>
+                        <div class="form_item">
+                            <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Name" class="form_input" required="">
+                        </div>
 
-                    <div class="form_item">
-                        <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Email" class="form_input">
-                    </div>
-
-                    <div class="form_item form-message">
-                        <input autocomplete="off" type="text" name="form[]" data-error="Error" placeholder="Message" class="form_input">
-                    </div>
-                    <a href="#" class="form-btn">Send Message</a>
-                </form>
+                        <div  class="form_item">
+                            Your email:
+                            <input type="email" name="email" class="form_input" required="">
+                        </div>
+                        <div  class="form_item form-message">
+                            Your message:
+                            <textarea name="message" class="form_input" required=""></textarea>
+                        </div>
+                        <!-- your other form fields go here -->
+                        <button  class="form-btn" type="submit">Send</button>
+                    </form>
                 <div class="contacts_body">
                     <ul class="contacts_list list-contacts">
                         <li class="list_contacts-item">
@@ -388,7 +394,7 @@
                         </li>
                         <li class="list_contacts-item">
                             <div class="list_contacts-icon">
-                                <img src="img/icons/shape (3).png">
+                                <img src="img/icons/message.svg" width="57px" height="56px">
                             </div>
                             <div class="list_contacts-body">
                                 <div class="list_contacts-title">E-Mail</div>
