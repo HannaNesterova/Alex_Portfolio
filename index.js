@@ -51,3 +51,25 @@ menu.classList.toggle('active');
 burger.classList.toggle('active');
 body.classList.toggle('lock');
 })
+
+/*SLIDER*/
+
+const productContainers = [...document.querySelectorAll('.product-container')];
+const nxtBtn = [...document.querySelectorAll('.nexBtn')];
+const preBtn = [...document.querySelectorAll('.preBtn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width;
+
+    nxtBtn[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        item.scrollLeft += containerWidth;
+    })
+
+
+    preBtn[i].addEventListener('click',(e) => {
+        e.preventDefault();
+        item.scrollLeft -= containerWidth;
+    })
+})
