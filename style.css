@@ -499,6 +499,12 @@ hr{
   border: none;
   padding: 10px;
   text-align: center;
+  margin-top: 60px;
+}
+.wrap-skroll{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 /* SKILLS */
