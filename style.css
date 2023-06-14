@@ -81,69 +81,6 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: inherit;
 }
 
-@font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?uci5aj');
-    src:  url('fonts/icomoon.eot?uci5aj#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?uci5aj') format('truetype'),
-      url('fonts/icomoon.woff?uci5aj') format('woff'),
-      url('fonts/icomoon.svg?uci5aj#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
-  
-  
-  
-  [class^="icon-"], [class*=" icon-"] {
-    font-family: 'icomoon' !important;
-    speak: never;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  
-  .icon-Vector-1:before {
-    content: "\e900";
-  }
-  .icon-Vector-2:before {
-    content: "\e901";
-  }
-  .icon-Vector-3:before {
-    content: "\e902";
-  }
-  .icon-Icon:before {
-    content: "\e903";
-  }
-  .icon-shape-Stroke-1:before {
-    content: "\e904";
-  }
-  .icon-shape-Stroke-2:before {
-    content: "\e905";
-  }
-  .icon-shape-Stroke-3:before {
-    content: "\e906";
-  }
-  .icon-shape-Stroke-4:before {
-    content: "\e907";
-  }
-  .icon-shape-Stroke-5:before {
-    content: "\e908";
-  }
-  .icon-shape-Stroke:before {
-    content: "\e909";
-  }
-  .icon-Vector:before {
-    content: "\e90a";
-  }
-
   .title{
     font-family: 'Plus Jakarta Sans', sans-serif;
     font-style: normal;
@@ -179,11 +116,18 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     z-index: 100;
+    background-color: #aa9dd47e;
 }
 .header_container{
     display: flex;
     align-items: center;
-    min-height: 120px;
+    min-height: 100px;
+}
+.header_logo:hover{
+  color: #645f66;
+}
+.me{
+  max-width: 450px;
 }
 .menu{
     flex: 1 1 auto;
@@ -348,12 +292,16 @@ text-align: center;
 }
 .icon-column {
     color: #7E74F1;
-    padding: 16px;
+    padding: 11px;
     background-color: #F5F3FE;
     border-radius: 15px;
     width: 50px;
     height: 50px;
     margin-bottom: 24px;
+    text-align: center;
+}
+._icon-{
+  font-size: 20px;
 }
 .work{
     padding-top: 100px;
@@ -422,6 +370,30 @@ PORTFOLIO8*/
 }
 .work .img-skrol-info a:hover{
   opacity: 1;
+}
+.work-skrol-left{
+  color: #7E74F1;
+  padding: 11px;
+  background-color: #F5F3FE;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.work-skrol-left:hover{
+  color: white;
+}
+.work-skrol-right{
+  color: #7E74F1;
+  padding: 11px;
+  background-color: #F5F3FE;
+  border-radius: 15px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 24px;
+  text-align: center;
+  margin-right: 9px;
 }
 
 /*EXPERIENCE*/
@@ -852,7 +824,10 @@ justify-content: space-around;
   .header_logo{
     position: relative;
     z-index: 5;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: bold;
   }
+ 
   .header_action{
     position: relative;
     z-index: 5;
@@ -877,7 +852,7 @@ justify-content: space-around;
 .main-section_content{
   display: flex;
   flex-direction: column-reverse;
-  margin-top: 200px;
+  margin-top: 500px;
 }
 .menu_link{
   font-size: 30px;
