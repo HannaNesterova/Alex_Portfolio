@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="img/fonts/icomoon/icons.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <div class="wrapper">
@@ -432,34 +433,44 @@
         <section class="clients">
             <div class="container">
                 <div class="work-title">
-                    <div class="title_lable">MY CLIENTS</div>
-                    <div class="title">Testimonials</div> 
+                    <div class="title_lable">MY EDUCATION</div>
+                    <div class="title">Certificates</div> 
                 </div>
 
                 <div class="work_skrol-img">
                     <div class="img-skrol-info">
-                        <img src="/img/client1.png">
-                        <p>We were very pleased to hear how you resolved our website's user interface issues and challenges.</p>
-                        <h5>Amelia Miller</h5>
-                        <h6>Designer</h6>
+                    <div data-aos="flip-right" >
+                        <div class="kodilla-flip">
+                        <img  class="kodilla" src="img/diploms/01.jpeg" width="300px" alt="kodilla">
+                        <div class="kodilla"></div>
+                        <a href="https://drive.google.com/file/d/1r8JLTLjPaEtdxbxl0HoTt-PLm7G408CP/view?usp=sharing" target="_blank">kodilla</a>
+                    </div>
+                </div>
                     </div>
     
                     <div class="img-skrol-info">
-                        <img src="/img/client2.png">
-                        <p>I’m glad I decided to work with you. The project was delivered on time with all the requirements.</p>
-                        <h5>James Delaney</h5>
-                        <h6>Developer</h6>
+                  <div data-aos="flip-right" >
+                    <div class="kodilla-flip">
+                        <img  class="html" src="img/diploms/02.jpeg"  width="300px" alt="html"> 
+                        <div class="html"></div>
+                        <a href="https://p13.zdusercontent.com/attachment/10812405/xQkwwdwR10Aov8fefQOMTkWUm?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..3iF_dusSBK_T2G5tiU16LQ.UY9Vw7MPbOkEl1mR3cOiCWuW4Rb4pD-DEZI4oaOJyI7H-oMoNk2cEaRrHw7pF7MqWIiynMatXNP-_DoDsnYTVmSR3tKhkkK42pXJQFIA0Tsepcs7-7Fra7b-nM01zfiiEnWVUZmLYpHJl8aHa1kW0tvfoBDfuFcL0pL_0ECrS5J89ewIvxXV2kmHrwFPemCKtIlLaAaENh6wQL_B_0z2lyQlB8HcwTSKfEJoYzpqpGRQ9SZirarn0qoTYaW6mGuuI0Z-Xgv2nenH4_fxTiiFmNIW_M1PkEqh3qWpTrERR0U.joaM2SOQc1G9DZ0nHPHzoQ" target="_blank">can she code</a>
+                    </div>
+                </div>
                     </div>
     
                     <div class="img-skrol-info">
-                        <img src="/img/client3.png">
-                        <p>The management of our projects was always faced with difficulties, but you handled these well.</p>
-                        <h5>Isabella Bennett</h5>
-                        <h6>Manager</h6>
+              <div data-aos="flip-right" >
+                    <div class="kodilla-flip">
+                        <img  class="bootstrap" src="img/diploms/03.jpeg"  width="300px" alt="bootstrap">
+                        <div class="bootstrap"></div>
+                        <a href="https://p13.zdusercontent.com/attachment/10812405/tcuIbRAU9l0P9kcl1gGJIsDJ9?token=eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..0n3LIbphN_yatpKXHoyCiQ.RkjA9M2vgn5yCcdHZsdxTNCZ_EH1zeB1x0Kdt9H1Fh7ysKxXexSfOjg6bwfu04bA7BtUA8pXu4r-IiyP7Nm7p6IKQr_4Tj14al8Xs9f-H1_GEvlPOlnjJQj4Phul-4fVWvMXXGRDVBUxXcFiXE4b9Xw53AdNYulDcoH8QVr7K1eGDFJMagcLu86yADdl5GY46EZ1F76LjTNxDaeTSMirpU_jw8t7SrpBKD3CGfV-74rKjbfEL2ebcolT1IvwXfOEAxF_rOSHTSD2ODeBOQ3l-Aw1Ib5vPepiFL8nnv51yok.5fwLICTx6qHHn-7DtG-WnQ" target="_blank">can she code</a>
+                    </div>
+                </div>
+
                     </div>
                 </div>
             </div>
-        </section>
+        </section> 
 
         <section class="section_form">
             <div class="container contacts-container">
@@ -534,5 +545,9 @@
     </div>
     
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
