@@ -54,9 +54,9 @@ body.classList.toggle('lock');
 
 /*SLIDER*/
 
-const productContainers = [...document.querySelectorAll('.product-container')];
-const nxtBtn = [...document.querySelectorAll('.nexBtn')];
-const preBtn = [...document.querySelectorAll('.preBtn')];
+const productContainers = document.querySelectorAll('.product-container');
+const nxtBtn = document.querySelectorAll('.nexBtn');
+const preBtn = document.querySelectorAll('.preBtn');
 
 productContainers.forEach((item, i) => {
     let containerDimensions = item.getBoundingClientRect();
