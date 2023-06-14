@@ -256,7 +256,13 @@ flex-direction: column;
   width: 100%;
 }
 
-
+a:hover{
+  cursor: pointer;
+}
+.experience-variants a.active{
+  background-color: #7E74F1;
+  color: white;
+}
 .social_link{
     color: #656D72;
     font-size: 24px;
